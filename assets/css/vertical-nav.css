@@ -51,7 +51,7 @@ Modules - reusable parts of our design
 
 #cd-vertical-nav {
   position: fixed;
-  right: -78px;
+  right: -108px;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
