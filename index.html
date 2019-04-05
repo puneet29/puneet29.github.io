@@ -14,12 +14,15 @@
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./assets/css/material-kit.css?v=2.1.1" rel="stylesheet" />
+  <link href="./assets/css/vertical-nav.css" rel="stylesheet" />
 </head>
 
-<body class="profile-page sidebar-collapse">
+<body class="profile-page sidebar-collapse" id="aboutme">
   <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
@@ -51,8 +54,7 @@
     </div>
   </nav>
   <div class="page-header header-filter" data-parallax="true"
-    style="background-image: url(&quot;./assets/img/city-profile.jpg&quot;); transform: translate3d(0px, 36.2667px, 0px);">
-  </div>
+    style="background-image: url('./assets/img/city-profile.jpg');"></div>
   <div class="main main-raised">
     <div class="profile-content">
       <div class="container">
@@ -85,80 +87,106 @@
             <a href="https://cessgndu.com/">CESS</a> as technical head (previously as design head), believes in
             promotion and contribution to Open Source Projects.</p>
         </div>
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="profile-tabs">
-              <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active show" href="#skills" role="tab" data-toggle="tab" aria-selected="true">
-                    <i class="material-icons">code</i> Skills
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#education" role="tab" data-toggle="tab" aria-selected="false">
-                    <i class="material-icons">book</i> Education
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects" role="tab" data-toggle="tab" aria-selected="false">
-                    <i class="material-icons">laptop</i> Projects
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#designs" role="tab" data-toggle="tab" aria-selected="false">
-                    <i class="material-icons">edit</i> Designs
-                  </a>
-                </li>
-              </ul>
+        <!-- START OF SKILLS SECTION -->
+        <div class="features-1" id="skills">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+              <h2 class="title">Skills</h2>
+              <h5 class="description">Some of the skills that I have acquired during my degree are all self-learned.
+                They are listed below.
+              </h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-info">
+                  <i class="material-icons">code</i>
+                </div>
+                <h4 class="info-title">Programming Languages</h4>
+                <div class="col justify-content-center">
+                  <span class="badge badge-pill badge-rose">Python</span>
+                  <span class="badge badge-pill badge-rose">C++</span>
+                  <span class="badge badge-pill badge-rose">JAVA</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">developer_mode</i>
+                </div>
+                <h4 class="info-title">Frameworks | Tools | Libraries</h4>
+                <div class="col justify-content-center">
+                  <span class="badge badge-pill badge-primary">Pytorch 1.0</span>
+                  <span class="badge badge-pill badge-primary">Numpy</span>
+                  <span class="badge badge-pill badge-primary">Pandas</span>
+                  <span class="badge badge-pill badge-primary">Matplotlib</span>
+                  <span class="badge badge-pill badge-primary">Keras</span>
+                  <span class="badge badge-pill badge-primary">OpenCV</span>
+                  <span class="badge badge-pill badge-primary">Git</span>
+                  <span class="badge badge-pill badge-primary">Seaborn</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-danger">
+                  <i class="material-icons">storage</i>
+                </div>
+                <h4 class="info-title">Database</h4>
+                <div class="col justify-content-center">
+                  <span class="badge badge-pill badge-rose">MySQL</span>
+                  <span class="badge badge-pill badge-rose">MS SQL Server</span>
+                  <span class="badge badge-pill badge-rose">PL/SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-warning">
+                  <i class="material-icons">brush</i>
+                </div>
+                <h4 class="info-title">Graphic designing</h4>
+                <div class="col justify-content-center">
+                  <span class="badge badge-pill badge-primary">Adobe Photoshop</span>
+                  <span class="badge badge-pill badge-primary">Adobe Illustrator</span>
+                  <span class="badge badge-pill badge-primary">Adobe After Effects</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info">
+                <div class="icon icon-rose">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <h4 class="info-title">Web Technologies</h4>
+                <div class="col justify-content-center">
+                  <span class="badge badge-pill badge-rose">HTML</span>
+                  <span class="badge badge-pill badge-rose">CSS</span>
+                  <span class="badge badge-pill badge-rose">ASP.NET</span>
+                  <span class="badge badge-pill badge-rose">C#</span>
+                  <span class="badge badge-pill badge-rose">VB</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tab-content tab-space">
-          <div class="tab-pane text-center gallery active show" id="skills">
-            <div class="row">
-              <div class="col justify-content-center">
-                <span class="badge badge-pill badge-rose">Python</span>
-                <span class="badge badge-pill badge-rose">C++</span>
-                <span class="badge badge-pill badge-rose">JAVA</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col justify-content-center">
-                <span class="badge badge-pill badge-primary">Pytorch 1.0</span>
-                <span class="badge badge-pill badge-primary">Numpy</span>
-                <span class="badge badge-pill badge-primary">Pandas</span>
-                <span class="badge badge-pill badge-primary">Matplotlib</span>
-                <span class="badge badge-pill badge-primary">Keras</span>
-                <span class="badge badge-pill badge-primary">OpenCV</span>
-                <span class="badge badge-pill badge-primary">Git</span>
-                <span class="badge badge-pill badge-primary">Seaborn</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col justify-content-center">
-                <span class="badge badge-pill badge-rose">MySQL</span>
-                <span class="badge badge-pill badge-rose">MS SQL Server</span>
-                <span class="badge badge-pill badge-rose">PL/SQL</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col justify-content-center">
-                <span class="badge badge-pill badge-primary">Adobe Photoshop</span>
-                <span class="badge badge-pill badge-primary">Adobe Illustrator</span>
-                <span class="badge badge-pill badge-primary">Adobe After Effects</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col justify-content-center">
-                <span class="badge badge-pill badge-rose">HTML</span>
-                <span class="badge badge-pill badge-rose">CSS</span>
-                <span class="badge badge-pill badge-rose">ASP.NET</span>
-                <span class="badge badge-pill badge-rose">C#</span>
-                <span class="badge badge-pill badge-rose">VB</span>
-              </div>
+        <!-- END OF SKILLS SECTION -->
+        <!-- START OF EDUCATION SECTION -->
+        <div class="features-2" id="education">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">Education</h2>
+              <h5 class="description">I am currently in 6th semester of my Bachelor's degree in Technology (Computer
+                Science) at Guru Nanak Dev University. I've always wondered about how computers work, and pursuing
+                this
+                degree has satisfied my curiousity.</h5>
             </div>
           </div>
-          <div class="tab-pane academia" id="education">
+          <div class="tab-pane academia">
             <div class="row">
               <div class="col justify-content-center">
                 <div id="accordion" role="tablist">
@@ -223,40 +251,51 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane text-center" id="projects">
-
-          </div>
-          <div class="tab-pane text-center gallery" id="designs">
-
-          </div>
         </div>
+        <!-- END OF EDUCATION SECTION -->
       </div>
     </div>
   </div>
+  <!-- SCRIPTS START -->
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="./assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker -->
-  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders -->
-  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--	Plugin for Tags -->
   <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
-  <!--	Plugin for Select -->
-  <script src="./assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
-  <!--	Plugin for Fileupload-->
-  <script src="./assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
-  <!--	Plugin for Small Gallery in Product Page -->
+  <!--	Plugin for Small Gallery -->
   <script src="./assets/js/plugins/jquery.flexisel.js" type="text/javascript"></script>
-  <!-- Plugins for presentation and navigation  -->
-  <script src="./assets/demo/modernizr.js" type="text/javascript"></script>
-  <script src="./assets/demo/vertical-nav.js" type="text/javascript"></script>
+  <!-- Plugin for Vertical Nav Bar -->
+  <script src="./assets/js/vertical-nav.js" type="text/javascript"></script>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Kit-->
   <script src="./assets/js/material-kit.js?v=2.1.1" type="text/javascript"></script>
+  <!-- SCRIPTS END -->
+  <!-- VERTICAL NAV BAR -->
+  <nav id="cd-vertical-nav">
+    <ul>
+      <li>
+        <a href="#aboutme" data-number="1">
+          <span class="cd-dot"></span>
+          <span class="cd-label">About Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" data-number="2">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#education" data-number="3">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Education</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </body>
 
 </html>
