@@ -9834,6 +9834,10 @@ a .material-icons {
   background-color: #333333;
 }
 
+.sharing-area .btn-gitlab {
+  background-color: #FD6D26;
+}
+
 #navbar .navbar {
   border-radius: 0;
 }
@@ -14588,10 +14592,23 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   box-shadow: 0 2px 2px 0 rgba(51, 51, 51, 0.14), 0 3px 1px -2px rgba(51, 51, 51, 0.2), 0 1px 5px 0 rgba(51, 51, 51, 0.12);
 }
 
+.btn.btn-gitlab {
+  color: #ffffff;
+  background-color: #FD6D26;
+  border-color: #FD6D26;
+  box-shadow: 0 2px 2px 0 rgba(51, 51, 51, 0.14), 0 3px 1px -2px rgba(51, 51, 51, 0.2), 0 1px 5px 0 rgba(51, 51, 51, 0.12);
+}
+
 .btn.btn-github:hover {
   color: #ffffff;
   background-color: #2b2b2b;
   border-color: #141414;
+}
+
+.btn.btn-gitlab:hover {
+  color: #ffffff;
+  background-color: rgb(226, 92, 25);
+  border-color: rgb(223, 90, 23);
 }
 
 .btn.btn-github:focus, .btn.btn-github.focus, .btn.btn-github:hover {
@@ -14600,10 +14617,23 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   border-color: #141414;
 }
 
+.btn.btn-gitlab:focus, .btn.btn-gitlab.focus, .btn.btn-gitlab:hover {
+  color: #ffffff;
+  background-color: rgb(226, 92, 25);
+  border-color: rgb(223, 90, 23);
+}
+
 .btn.btn-github:active, .btn.btn-github.active, .open>.btn.btn-github.dropdown-toggle, .show>.btn.btn-github.dropdown-toggle {
   color: #ffffff;
   background-color: #2b2b2b;
   border-color: #141414;
+  box-shadow: 0 2px 2px 0 rgba(51, 51, 51, 0.14), 0 3px 1px -2px rgba(51, 51, 51, 0.2), 0 1px 5px 0 rgba(51, 51, 51, 0.12);
+}
+
+.btn.btn-gitlab:active, .btn.btn-gitlab.active, .open>.btn.btn-gitlab.dropdown-toggle, .show>.btn.btn-gitlab.dropdown-toggle {
+  color: #ffffff;
+  background-color: rgb(226, 92, 25);
+  border-color: rgb(223, 90, 23);
   box-shadow: 0 2px 2px 0 rgba(51, 51, 51, 0.14), 0 3px 1px -2px rgba(51, 51, 51, 0.2), 0 1px 5px 0 rgba(51, 51, 51, 0.12);
 }
 
